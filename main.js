@@ -208,19 +208,10 @@ z-index: 999999 !important;
 }
 
 // history flood
-function slepd(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
-}
 btn1.addEventListener("click", function () {
 
   !function () {
-    var numm=prompt('how flod');
-    for (var t = "/", o = 0; o < numm; o++)
-       slepd(5);
+    for (var t = "/", o = 0; o < 500; o++)
       history.pushState(0, 0, t += o.toString())
   }();
 
