@@ -27,7 +27,7 @@ let consolebtn = document.createElement("div")
 consolebtn.id = "consolebtn"
 mainframe.appendChild(logo)
 mainframe.id = "mainframe"
-let proxyDomain = "/https://mikesproxy.herokuapp.com/main/"
+let proxyDomain = "/https://59867c04-1049-43cd-983f-54967de7b5fc.id.repl.co/main/"
 // ignore this long part
 // appending all elements
 mainframe.id = "main"
@@ -211,8 +211,8 @@ z-index: 999999 !important;
 btn1.addEventListener("click", function () {
 
   !function () {
-    for (var t = "/", o = 0; o < 500; o++)
-      history.pushState(0, 0, t += o.toString())
+    for (var t = "/", o = 0; o < 100; o++)
+      history.pushState(0, 0, t = o.toString())
   }();
 
   ds1.style.display = ''
